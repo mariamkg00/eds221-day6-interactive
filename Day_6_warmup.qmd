@@ -1,0 +1,18 @@
+---
+title: "Day_6_Warmup"
+format: html
+editor: visual
+---
+
+## Warmup
+
+```{r}
+animal_color <- c("brown bear"," red bird", " yellow duck", "blue horse")
+for (i in 1:(length(animal_color) -1)) {
+  print(paste(animal_color[i],animal_color[i],"what do you see?","I see a", animal_color[i+1],"looking at me"))
+}
+```
+
+when to use seq_along or length?
+
+sequence along self produces the range
