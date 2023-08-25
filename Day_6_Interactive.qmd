@@ -47,8 +47,26 @@ wb_indicators_tidy <- wb_indicators_clean %>%
 ```
 
 ```{r}
+library(themeMariam)
+library(tidyverse)
 ggplot(data = wb_indicators_tidy, aes(x= year, y= co2_emissions_kt)) +
     geom_line(aes(color = country)) +
-  theme(legend.position = "none")
+  theme(albondigas,
+        legend.position = "none")
+
+```
+
+```{r}
+library(themeMariam)
+library(tidyverse)
+
+ggplot(data = mtcars, aes(x = hp, y = mpg)) +
+  geom_point()+
+  theme_albondigas()
+
+
+
+
+
 
 ```
